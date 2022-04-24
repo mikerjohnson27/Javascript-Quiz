@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+    <body>
+        <header>
+            <h3>Quiz Game</h3>
+        <div id="highscoresDiv">
+            <button type="button" id="topScores">View Top Scores</button>
+        </div>
+            <div id="timerDiv">Time Left : <span id="timer"></span></div>
+        </header>
+    <section id="begin">
+        <div>
+            <h3>Coding Quiz Challenge</h3>
+        </div>
+        <div>
+            <ul>
+                <p>Answer the following questions within the time limit. Wrong awnsers will result in a 10 seconds loss in time and you will loose 10 points. Correct anwsers will add 10 points. Total Points will be the result of left over time and any gianed points.   So please be careful and fast.</p>
+            </ul>
+            <button type="button" id="beginQuiz">Begin</button>
+        </div>
+    </section>
+    <section id="quizsection">
+    <div id="quizQ"></div>
+    <div>
+        <div id="choiceBt"></div>
+        <div id="answer"></div>
+    </div>
+    </section>
+    <section class="Nonshow" id="yourScoreDiv" style="display: none">
+        <div>
+            <ul>
+                <h3>Your score:</h3>
+                <h1 id="score"></h1>
+            </ul>
+            <input type="text" id="initials" placeholder="Enter your Initials" />
+            <button type="button" id="addScore">Submit Score</button>
+        </div>
+    </section>
+    <section id="startOverDiv" style="display: none">
+        <div>
+            <ul>
+                <h3>Would you like to play again?</h3>
+            </ul>
+                <button type="button" id="startOver">Yes</button>
+        </div>
+    </section>
+    <section id="scoresDisplay" style="display: none">
+    <div>
+        <h3>Scores:</h3>
+    </div>
+    <div>
+        <ul>
+        <div id="topScoresDiv">
+    </div>
+    </section>
+</body>
+<script src="js/styles.js"></script>
+</html>
